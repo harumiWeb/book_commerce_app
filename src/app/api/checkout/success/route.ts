@@ -32,6 +32,6 @@ export async function POST(req: Request, res: Response) {
 			return NextResponse.json({ newPurchase });
 		}
 	} catch (error) {
-		return NextResponse.json({ message: "購入処理中にエラーが発生しました", error: error.message }, { status: 500 });
+		return NextResponse.json({ message: "購入処理中にエラーが発生しました", error: error }, { status: 500 });
 	}
 }
