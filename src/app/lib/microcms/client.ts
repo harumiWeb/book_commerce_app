@@ -11,6 +11,7 @@ export const getBooks = async () => {
     endpoint: "e-book",
   });
   return allBooks;
+  
 };
 
 export const getDetailBook = async (bookId: string) => {
