@@ -28,7 +28,6 @@ export default async function ProfilePage() {
       purchasesDetailBooks = await Promise.all(bookIds.map(async (bookId) => {
         return await getDetailBook(bookId);
       }));
-      console.log(purchasesDetailBooks);
     } catch (error) {
       console.error("Error fetching purchases:", error);
     }
